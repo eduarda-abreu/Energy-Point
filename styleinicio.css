@@ -1,0 +1,44 @@
+/* #1C2E30
+#023A40
+#061C1F
+#3F4445
+#536B70 */
+
+.navbar{
+    background-color:#284A63;
+    color: #E6B503;
+}
+
+body{
+    background-color: #023A40;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4{
+    font-size: 80px;
+}
+
+footer{
+    display: flex;
+    background-color: #ffffff;
+    color: white;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* .carousel{
+    margin-bottom: 80px;
+} */
+
+.quote{
+    /* margin-bottom: 80px; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: rgb(83,107,112);
+    background: radial-gradient(circle, rgba(83,107,112,1) 0%, rgba(255,255,255,1) 55%);
+}
+
+.imagem{
+    width: 1200px;
+    height: 600px;
+}

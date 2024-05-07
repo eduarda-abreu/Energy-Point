@@ -1,0 +1,55 @@
+
+body{
+    background-color: white;
+}
+
+.navbar{
+    background-color: #000000;
+    color: white;
+}
+
+.iphonetxt{
+    color:black;
+    text-align: center;
+    margin-top:74px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.item {
+    text-align: center;
+    justify-content: center;
+}
+
+
+.btn-buy {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+footer{
+    display: flex;
+    background-color: #ffffff;
+    color: white;
+    padding: 30px;
+    justify-content: center;
+}
+
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#map-container {
+    height: 500px; 
+    width: 100%;
+}
