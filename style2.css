@@ -1,13 +1,42 @@
 
+navbar{
+    background-color:#284A63;
+    color: #E6B503;
+}
+
 body{
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
-    background-color: #000000;
+h4{
+    font-size: 80px;
+}
+
+footer{
+    display: flex;
+    background-color: #ffffff;
     color: white;
+    padding: 30px;
+    justify-content: center;
 }
 
+/* .carousel{
+    margin-bottom: 80px;
+} */
+
+.quote{
+    /* margin-bottom: 80px; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: rgb(83,107,112);
+    background: radial-gradient(circle, rgba(83,107,112,1) 0%, rgba(255,255,255,1) 55%);
+}
+
+.imagem{
+    width: 1200px;
+    height: 600px;
+}
 .iphonetxt{
     color:black;
     text-align: center;
