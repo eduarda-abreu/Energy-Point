@@ -1,62 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="trash.svg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Energy Point</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="trash.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Energy Point</title>
 </head>
 
 <header>
 
 
 </header>
+
+<nav class="navbar navbar-expand-lg py-3 fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo - exe branco.svg" alt="Logo" width="36" height="30" class="d-inline-block align-text-top">
+      Energy Point
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="inicio.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexmapa.html">Mapa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
-    <main class="principal centralizando2">
-        <div class="principal__espaco">
-            <div class="container-fluid mt-3">
-                <div class="row">
-                    <div class="col-md-4" style="width: 450px;">
-                        <div class="card shadow p-3 rounded" >
-                            <div class="card-body">
-                                <h2 class="titulo text-center"><b>Login</b></h2>
-                                <div class="principal2 mt-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-person-fill icon" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                                    </svg>
-                                    <input style="width: 250px; height: 40px;" type="email" id="email" placeholder="Enter your Username">                        
-                                </div>
-                                <div class="principal2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-lock icon mt-2" viewBox="0 0 16 16">
-                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-                                    </svg>
-                                    <input class="mt-2" style="width: 250px; height: 40px;" id="senha" placeholder="Enter your Password">
-                                </div>
-                                <button class="botoes mt-4" style="width: 130px;" onclick="fazerCadastro()"><b>Entrar</b></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="width: 500px;">
-                        <div  class="card shadow p-3 rounded" style="height: 323px">
-                            <div class="titulocadastro">
-                            <div class="card-body">
-                                <h2 class="card-title titulo"><b>Cadastre-se agora</b> </h2>
-                            </div>
-                                <p class="card-subtitle card__paragrafo">Cadastre-se para acessar o site.</p>
-                                <button class="botoes mt-4" style="width: 130px;" onclick="redirecionarParaLogin()"><b>Nova conta</b></button>
-                            </div>
-                        </div>
-                    </div>
+  <main class="principal centralizando2">
+    <div class="principal__espaco">
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-md-4" style="width: 450px;">
+            <div class="card shadow p-3 rounded-lg border-0">
+              <div class="card-body">
+                <h2 class="titulo text-center"><b>Login</b></h2>
+                <div class="principal2 mt-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" 
+                    class="bi bi-person-fill icon" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                  </svg>
+                  <input class="ms-3" style="width: 250px; height: 40px;" type="email" name="loginemail" id="email"
+                    placeholder="Enter your email">
                 </div>
+                <div class="principal2 pt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" 
+                    class="bi bi-lock icon mt-2" viewBox="0 0 16 16">
+                    <path
+                      d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                  </svg>
+                  <input class="mt-2 ms-3" style="width: 250px; height: 40px;" type="password" name="loginsenha" id="senha"
+                    placeholder="Enter your Password">
+                </div>
+                <button name="acessarconta" class="botoes mt-4" style="width: 130px;"><b>Entrar</b></button>
+                <span class="user-info"></span>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4" style="width: 500px;">
+            <div class="card shadow p-3 rounded-lg border-0" style="height: 323px">
+              <div class="titulocadastro">
+                <div class="card-body">
+                  <h2 class="card-title titulo"><b>Cadastre-se agora</b> </h2>
+                </div>
+                <p class="card-subtitle card__paragrafo">Cadastre-se para acessar o site.</p>
+                <button class="botoes mt-3" style="width: 130px;" onclick="redirecionarParaLogin()"><b>Nova
+                    conta</b></button>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  
+  <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDP7pRv2U068DKtQPNlmNEzxSh4AHvwsCM",
+        authDomain: "energypoint-5f375.firebaseapp.com",
+        projectId: "energypoint-5f375",
+        storageBucket: "energypoint-5f375.appspot.com",
+        messagingSenderId: "799491864801",
+        appId: "1:799491864801:web:26483095ebb66a5fac9fa0"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // LOGIN DA CONTA
+      const buttonLogin = document.querySelector('button[name=acessarconta]');
+      const spanUserInfo = document.querySelector('span.user-info');
+
+      buttonLogin.addEventListener('click', () => {
+        const formData = {
+          email: document.querySelector("input[name=loginemail]").value,
+          senha: document.querySelector("input[name=loginsenha]").value,
+        };
+
+        firebase.auth().signInWithEmailAndPassword(formData.email, formData.senha)
+          .then(async (data) => {
+            const uid = data.user.uid;
+            try {
+              const doc = await firebase.firestore().doc(`users/${uid}`).get();
+              spanUserInfo.innerHTML = JSON.stringify(doc.data());
+            } catch (e) {
+              spanUserInfo.innerHTML = `Error: ${e}`;
+            }
+          })
+          .catch((error) => {
+            if (error.code === 'auth/wrong-password') {
+              alert('Senha incorreta');
+            } else if (error.code === 'auth/user-not-found') {
+              alert('Usuário não encontrado');
+            } else {
+              alert(error.message);
+            }
+          });
+      });
+    });
+  </script>
 </body>
+
 </html>
